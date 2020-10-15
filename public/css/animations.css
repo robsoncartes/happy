@@ -11,29 +11,44 @@
     }
 }
 
+@keyframes right {
+    from {
+        transform: translateX(-100%);
+
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 .animate-up {
     animation-name: up;
     animation-duration: 300ms;
     animation-fill-mode: backwards;
 }
 
-/* Tempo para aparecer cada componente  START - 1º Pagina */
-#logo {
-    animation-delay: 50ms;
+.animate-right {
+    animation-name: right;
+    animation-duration: 300ms;
 }
 
-.location {
-    animation-delay: 100ms;
+.animate-appear {
+    animation-name: appear;
+    animation-duration: 300ms;
+    animation-fill-mode: backwards;
 }
 
-main h1 {
-    animation-delay: 150ms;
-}
 
-.visit p {
-    animation-delay: 250ms;
-}
 
-.visit a {
-    animation-delay: 250ms;
-}
+
+
